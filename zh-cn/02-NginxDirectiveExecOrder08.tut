@@ -9,8 +9,8 @@
 常必要的。所以接下来我们接着讨论余下的那些阶段。
 
 前面在 L<ordertut/（一）> 中提到，Nginx 处理请求的过程一共划
-分为 11 个阶段，按照执行顺序依次是 C<post-read>、C<server-rewrite>、C<find-config>、C<rewrite>、C<post-rewrite>、C<preaccess>、C<access>、C<post-access>、C<try-files>、C<content>
-以及 C<log>.
+分为 11 个阶段，按照执行顺序依次是 C<post-read>、C<server-rewrite>、C<find-config>、C<rewrite>、C<post-rewrite>、C<preaccess>、C<access>、C<post-access>、
+C<try-files>、C<content>以及 C<log>.
 
 最先执行的 C<post-read> 阶段在 Nginx 读取并解析完请求头（request
 headers）之后就立即开始运行。这个阶段像前面介绍过的 C<rewrite>
